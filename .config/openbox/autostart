@@ -8,6 +8,5 @@ nitrogen --restore
 compton -bCGfF -i 0.95 --sw-opti -I 0.09 -O 0.09
 sleep 1 && guake &
 tint2 &
-mopidy &
+#mopidy &
 volti &
-

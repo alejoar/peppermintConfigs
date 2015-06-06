@@ -3,7 +3,7 @@
 	<menu id="root-menu" label="Openbox 3">
 		<item label="Terminal emulator">
 			<action name="Execute">
-				<execute>x-terminal-emulator  -c 100 -r 25</execute>
+				<execute>x-terminal-emulator </execute>
 			</action>
 		</item>
 		<item label="Firefox">
@@ -22,6 +22,18 @@
 			</action>
 		</item>
 		<!-- This requires the presence of the 'menu' package to work -->
+		<menu id="root-menu-471249" label="Accesories">
+			<item label="Search Files">
+				<action name="Execute">
+					<execute>gnome-search-tool</execute>
+				</action>
+			</item>
+			<item label="Calculator">
+				<action name="Execute">
+					<execute>galculator</execute>
+				</action>
+			</item>
+		</menu>
 		<menu id="root-menu-824726" label="Media">
 			<item label="VLC">
 				<action name="Execute">
@@ -33,9 +45,14 @@
 					<execute>x-terminal-emulator -e ncmpcpp</execute>
 				</action>
 			</item>
-			<item label="acava">
+			<item label="p-cava">
 				<action name="Execute">
-					<execute>x-terminal-emulator -e cava -f 30 -c white -b 28 -s 110</execute>
+					<execute>x-terminal-emulator -e p-cava -f 30 -c white -b 28 -s 110</execute>
+				</action>
+			</item>
+			<item label="Spotify Play">
+				<action name="Execute">
+					<execute>chromium-browser --app=https://play.spotify.com/</execute>
 				</action>
 			</item>
 			<item label="Popcorn-Time">
@@ -45,10 +62,66 @@
 			</item>
 		</menu>
 		<menu id="root-menu-61200" label="Apps">
+			<item label="PDF Viewer">
+				<action name="Execute">
+					<execute>evince</execute>
+				</action>
+			</item>
+			<item label="Minitube">
+				<action name="Execute">
+					<execute>minitube</execute>
+				</action>
+			</item>
+			<item label="Editor by pixlr">
+				<action name="Execute">
+					<execute>chromium-browser --app=http://pixlr.com/editor/</execute>
+				</action>
+			</item>
+			<item label="Express by Pixlr">
+				<action name="Execute">
+					<execute>chromium-browser --app=http://pixlr.com/express/</execute>
+				</action>
+			</item>
+			<item label="Image Viewer">
+				<action name="Execute">
+					<execute>eog</execute>
+				</action>
+			</item>
+			<item label="Simple Scan">
+				<action name="Execute">
+					<execute/>
+				</action>
+			</item>
+			<item label="Transmission BitTorrent">
+				<action name="Execute">
+					<execute>transmission-gtk</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="root-menu-734230" label="Google">
+			<item label="Gmail">
+				<action name="Execute">
+					<execute>chromium-browser --app=http://mail.google.com/</execute>
+				</action>
+			</item>
 			<item label="Hangouts">
 				<action name="Execute">
-					<execute>chromium-browser --profile-directory=Default --app-id=knipolnnllmklapflnccelgolnpehhpl
-</execute>
+					<execute>chromium-browser --profile-directory=Default --app-id=knipolnnllmklapflnccelgolnpehhpl</execute>
+				</action>
+			</item>
+			<item label="Google Calendar">
+				<action name="Execute">
+					<execute>chromium-browser --app=http://www.google.com/calendar</execute>
+				</action>
+			</item>
+			<item label="Google Drive">
+				<action name="Execute">
+					<execute>chromium-browser --app=http://drive.google.com/</execute>
+				</action>
+			</item>
+			<item label="Chrome Remote Desktop">
+				<action name="Execute">
+					<execute>chromium-browser --profile-directory=Default --app-id=gbchcmhmhahfdphkhkmpfmihenigjmpp</execute>
 				</action>
 			</item>
 		</menu>
@@ -64,9 +137,30 @@
 				</action>
 			</item>
 		</menu>
+		<menu id="root-menu-953753" label="Games">
+			<item label="2D/3D Chess">
+				<action name="Execute">
+					<execute>chromium-browser --app=http://htmlchess.sourceforge.net/demo/example.html</execute>
+				</action>
+			</item>
+			<item label="First-Person Tetris">
+				<action name="Execute">
+					<execute>chromium-browser --app=http://firstpersontetris.com/</execute>
+				</action>
+			</item>
+			<item label="Solitr">
+				<action name="Execute">
+					<execute>chromium-browser --app=http://www.solitr.com/</execute>
+				</action>
+			</item>
+			<item label="Entanglement">
+				<action name="Execute">
+					<execute>chromium-browser --app=http://entanglement.gopherwoodstudios.com/</execute>
+				</action>
+			</item>
+		</menu>
 		<menu id="/Debian"/>
 		<separator/>
-		<menu id="client-list-menu"/>
 		<menu id="root-menu-833355" label="Preferences">
 			<menu id="root-menu-833355-42030" label="OpenBox">
 				<item label="Restart">
@@ -106,6 +200,11 @@
 					<execute>lxsession-default-apps</execute>
 				</action>
 			</item>
+			<item label="Font Manager">
+				<action name="Execute">
+					<execute>font-manager %f</execute>
+				</action>
+			</item>
 			<item label="Disks">
 				<action name="Execute">
 					<execute>gnome-disks</execute>
@@ -122,6 +221,7 @@
 				</action>
 			</item>
 		</menu>
+		<menu id="client-list-menu"/>
 		<separator/>
 		<item label="Logout">
 			<action name="Execute">
