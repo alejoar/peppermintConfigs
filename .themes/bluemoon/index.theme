@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=bluemoon
+Comment=A clean non-intrusive theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=bluemoon
+MetacityTheme=Flatidy
+ButtonLayout=:minimize,maximize,close
