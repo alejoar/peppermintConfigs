@@ -10,4 +10,4 @@ sleep 1 && guake &
 #tint2 &
 #mopidy &
 volti &
-rofi -key-run F12
+rofi -key-run F2 -bg "#FFFFFF" -bc "#d13726" -bw 4 -hlbg "#d13726" -font mono\ 9 -opacity 100 -width 500 -fixed-num-lines 10 -sidebar-mode -switchers "run,window"
