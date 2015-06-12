@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>1977-Blue</name>
+    <name>1977-Red</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -120,8 +120,8 @@
 
        use obconf if you want to change these without having to log out
        and back in -->
-    <number>4</number>
-    <firstdesk>1</firstdesk>
+    <number>5</number>
+    <firstdesk>3</firstdesk>
     <names>
       <!-- set names up here if you want to, like this:
     <name>desktop 1</name>
@@ -133,7 +133,7 @@
        desktops.  Set this to 0 to disable the popup. -->
   </desktops>
   <resize>
-    <drawContents>yes</drawContents>
+    <drawContents>no</drawContents>
     <popupShow>Nonpixel</popupShow>
     <!-- 'Always', 'Never', or 'Nonpixel' (xterms and such) -->
     <popupPosition>Center</popupPosition>
@@ -178,6 +178,113 @@
   </dock>
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
+    <!-- Tiling.. -->
+    <keybind key="C-W-KP_8">
+      <action name="Execute">
+        <command>xh_tile.rb --split-up</command>
+      </action>
+    </keybind>
+    <keybind key="C-W-KP_2">
+      <action name="Execute">
+        <command>xh_tile.rb --split-down</command>
+      </action>
+    </keybind>
+    <keybind key="C-W-KP_4">
+      <action name="Execute">
+        <command>xh_tile.rb --split-left</command>
+      </action>
+    </keybind>
+    <keybind key="C-W-KP_6">
+      <action name="Execute">
+        <command>xh_tile.rb --split-right</command>
+      </action>
+    </keybind>
+    <keybind key="C-W-KP_0">
+      <action name="Execute">
+        <command>xh_tile.rb --all</command>
+      </action>
+    </keybind>
+    <keybind key="S-W-KP_8">
+      <action name="Execute">
+        <command>xh_tile.rb --grow-up</command>
+      </action>
+    </keybind>
+    <keybind key="S-W-KP_2">
+      <action name="Execute">
+        <command>xh_tile.rb --grow-down</command>
+      </action>
+    </keybind>
+    <keybind key="S-W-KP_4">
+      <action name="Execute">
+        <command>xh_tile.rb --grow-left</command>
+      </action>
+    </keybind>
+    <keybind key="S-W-KP_6">
+      <action name="Execute">
+        <command>xh_tile.rb --grow-right</command>
+      </action>
+    </keybind>
+    <keybind key="S-W-KP_0">
+      <action name="Execute">
+        <command>xh_tile.rb --cycle</command>
+      </action>
+    </keybind>
+    <keybind key="A-W-KP_0">
+      <action name="Execute">
+        <command>xh_tile.rb --swap</command>
+      </action>
+    </keybind>
+    <keybind key="W-KP_8">
+      <action name="Execute">
+        <command>xh_tile.rb t</command>
+      </action>
+    </keybind>
+    <keybind key="W-KP_5">
+      <action name="Execute">
+        <command>xh_tile.rb</command>
+      </action>
+    </keybind>
+    <keybind key="W-KP_2">
+      <action name="Execute">
+        <command>xh_tile.rb b</command>
+      </action>
+    </keybind>
+    <keybind key="W-KP_7">
+      <action name="Execute">
+        <command>xh_tile.rb tl</command>
+      </action>
+    </keybind>
+    <keybind key="W-KP_4">
+      <action name="Execute">
+        <command>xh_tile.rb l</command>
+      </action>
+    </keybind>
+    <keybind key="W-KP_1">
+      <action name="Execute">
+        <command>xh_tile.rb bl</command>
+      </action>
+    </keybind>
+    <keybind key="W-KP_9">
+      <action name="Execute">
+        <command>xh_tile.rb tr</command>
+      </action>
+    </keybind>
+    <keybind key="W-KP_6">
+      <action name="Execute">
+        <command>xh_tile.rb r</command>
+      </action>
+    </keybind>
+    <keybind key="W-KP_3">
+      <action name="Execute">
+        <command>xh_tile.rb br</command>
+      </action>
+    </keybind>
+    <keybind key="W-KP_0">
+      <action name="Execute">
+        <command>xh_tile.rb --binary</command>
+      </action>
+    </keybind>
+    <!-- /Tiling -->
     <!-- Aero Snap for Openbox Begin Code-->
     <keybind key="W-m">        # minimalCenter
       <action name="UnmaximizeFull"/>
